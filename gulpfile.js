@@ -171,6 +171,8 @@ gulp.task('webserver', ['watch','build'], function() {
         .pipe(webserver({
             livereload: false,
             directoryListing: true,
+            host: "0.0.0.0",
+            port: 8000,
             open: "http://10.0.1.252:8000/dist/index.html"
         }));
 });
