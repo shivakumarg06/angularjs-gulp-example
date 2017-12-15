@@ -93,25 +93,25 @@ gulp.task('jshint', function() {
 
 /////////////////////////////////////////////////////////////////////////////////////
 //
-// runs karma tests
+// runs tests
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('test', ['build-js'], function() {
-    var testFiles = [
-        './test/unit/*.js'
-    ];
+//gulp.task('test', ['build-js'], function() {
+//    var testFiles = [
+//        './test/unit/*.js'
+//    ];
 
-    return gulp.src(testFiles)
-        .pipe(karma({
-            configFile: 'karma.conf.js',
-            action: 'run'
-        }))
-        .on('error', function(err) {
-            console.log('karma tests failed: ' + err);
-            throw err;
-        });
-});
+//     return gulp.src(testFiles)
+//         .pipe(karma({
+//             configFile: 'karma.conf.js',
+//             action: 'run'
+//         }))
+// //         .on('error', function(err) {
+//             console.log('karma tests failed: ' + err);
+//             throw err;
+//         });
+//});
 /////////////////////////////////////////////////////////////////////////////////////
 //
 // Build a minified Javascript bundle - the order of the js files is determined
