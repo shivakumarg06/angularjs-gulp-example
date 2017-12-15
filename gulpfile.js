@@ -210,4 +210,4 @@ gulp.task('sprite', function () {
 //
 /////////////////////////////////////////////////////////////////////////////////////
 
-gulp.task('default', ['sprite','build', 'test']);
+gulp.task('default', ['sprite','build']);
